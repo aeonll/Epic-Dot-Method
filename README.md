@@ -1,6 +1,6 @@
 # Epic Dot Method Script
 
-Yes I know its awful. Its functional not clean. This script does the dot method to quickly create realod smurfs hands-free
+Yes I know its awful. Its functional not clean. This script does the dot method to quickly create reload smurfs hands-free
 It only has *full* support for 1440p as of right now. It will create the info for 1080p. If it issues with timing. Go into the file and manually change sleep lengths to match your pc speed
 
 ## Guide
