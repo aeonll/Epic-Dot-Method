@@ -13,7 +13,7 @@ It only has *full* support for 1440p as of right now. It will create the info fo
 * Click "Install Now". If the installation fails, try again but check the run as administration option
 * Now press the windows key and type powershell and press enter
 
-##### Now run the following commands one by one
+#### Now run the following commands one by one
 #### Wait for one to finish installing before running the next!
 * pip install webdriver-manager
 * pip install selenium
