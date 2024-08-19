@@ -38,3 +38,4 @@ Once you are there, the the following command
 ![Gmail Setup](images/gmail.png)
 #### There may or may not be a bar mentioning default browser within the black box. IF it IS there, click the x to remove it
 #### Do NOT get rid of the bar within the blue bar!!
+#### Also make sure you are already signed into the proper email
