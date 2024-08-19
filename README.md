@@ -3,7 +3,7 @@
 This script takes you from the desktop to the captcha on the epic games launcher
 
 ## Guide
-* Navigate to the python website by clicking [this](python.org/downloads)
+* Navigate to the python website by clicking [this](https://python.org/downloads)
 *  Select the Download Python 3.12.5 option
 ![Python Download](images/pythonDLpng)
 * Run the exe
