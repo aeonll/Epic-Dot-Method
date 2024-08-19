@@ -14,11 +14,11 @@ It only has *full* support for 1440p as of right now. It will create the info fo
 * Now press the windows key and type powershell and press enter
 
 ##### Now run the following commands one by one
+#### Wait for one to finish installing before running the next!
 * pip install webdriver-manager
 * pip install selenium
 * pip install pyautogui
 * pip install pugetwindow
-
 ##### Once these are done running. Navigate to the directory that foo.py is located in (probably downloads)
 * Use the following command to navigate to Downloads
 ![Change Directory](images/cd.png)
