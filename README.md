@@ -1,6 +1,6 @@
 # Epic Dot Method Script
 
-This script takes you from the desktop to the captcha on the epic games launcher
+This script does the dot method to quickly create realod smurfs hands-free
 
 ## Guide
 * Navigate to the python website by clicking [this](https://python.org/downloads)
@@ -18,3 +18,5 @@ This script takes you from the desktop to the captcha on the epic games launcher
 * pip install pyautogui
 * pip install pugetwindow
 
+##### Once these are done running. Navigate to the directory that foo.py is located in (probably downloads)
+![Change Directory](images/cd.png)
