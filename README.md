@@ -24,8 +24,8 @@ It only has *full* support for 1440p as of right now. It will create the info fo
 ![Change Directory](images/cd.png)
 Once you are there, the the following command
 * python foo.py what@gmail.com password123 "username"
-Replace the inputs with your own
+##### Replace the inputs with your own
 **By default** it auto-generates a username.
-On line 465, put a '#' in front of 'GENNERATED_NAME = generate_username()' to use your own names
+##### On line 465, put a '#' in front of 'GENNERATED_NAME = generate_username()' to use your own names
 
 
