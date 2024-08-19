@@ -31,3 +31,10 @@ Once you are there, the the following command
 #### Username must be in quotes if you want a space in it
 
 
+## 2fa and browser information
+#### You must use Chrome for this script to work!
+#### Gmail has to be set up in a specific way as well!
+#### It has to look like the following image
+[Gmail Setup](images/gmail.png)
+#### There may or may not be a bar mentioning default browser within the black box. IF it IS there, click the x to remove it
+#### Do NOT get rid of the bar within the blue bar!!
