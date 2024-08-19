@@ -12,7 +12,7 @@ This script takes you from the desktop to the captcha on the epic games launcher
 * Click "Install Now". If the installation fails, try again but check the run as administration option
 * Now press the windows key and type powershell and press enter
 * Now run the following commands one by one
-> pip install webdriver-manager
-> pip install selenium
-> pip install pyautogui
-> pip install pugetwindow
+- pip install webdriver-manager
+- pip install selenium
+- pip install pyautogui
+- pip install pugetwindow
