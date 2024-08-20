@@ -5,17 +5,9 @@ import sys
 import random
 import threading
 
-import tkinter as tk
-import requests
-from bs4 import BeautifulSoup
 import pyautogui
 from itertools import combinations
 import pygetwindow as gw
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
 
 USED_EMAILS_FILE = "used_emails.txt"
 LAST_USED_EMAIL_FILE = "last_used_email.txt"
@@ -34,7 +26,7 @@ adjectives = [
     "Serene", "Valiant", "Fearless", "Graceful", "Radiant", "Swift", "Daring",
     "Quiet", "Silent", "Stormy", "Vibrant", "Majestic", "Mystic", "Vigilant",
     "Steady", "Rugged", "Sleek", "Vivid", "Frosty", "Luminous", "Glorious",
-    "Timeless", "Epic", "Regal", "Wise", "Epic", "Ethereal", "Blazing", "Heroic",
+    "Timeless", "Epic", "Regal", "Wise","Ethereal", "Blazing", "Heroic",
     "Arcane", "Mystical", "Stalwart", "Zealous", "Frosty", "Gritty", "Mysterious",
     "Nimble", "Omniscient", "Resolute", "Tenacious", "Unyielding", "Venerable", "Greasy",
     "Petite", "Hard", "Radical", "Wiggly", "Rigid", "Squeaky", "Spiteful", "Rotund"
@@ -305,6 +297,7 @@ def lego_skin1920():
     var = 1
 
 def get_fort2560():
+
     print("Getting Fortnite ...")
     sleep(2)
     #click on library
@@ -379,10 +372,13 @@ def sign_out2560():
 
 
     except IndexError:
-        print("Epic Games Launcher window not found.\nOpening Epic Game Launcher")
+        print("Epic Games Launcher window not found.")
 
 #closes fort
 def close_fort():
+
+    sleep(2)
+
     print("Checking if Fortnite is open ...")
     try:
         subprocess.run(["taskkill", "/F", "/IM", process_name], check=True)
@@ -482,6 +478,10 @@ def main(email, username, password):
     save_last_used_email(email_to_use)
     print(f"Using email: {email_to_use}")
 
+    close_fort()
+    sign_out2560()
+
+
     #path for 2560 x 1440p
     if res.width == 2560 and res.height == 1440:
         print(f"User resolution = {res.width}x{res.height}")
@@ -529,23 +529,39 @@ def main(email, username, password):
 
         sleep(.15)
 
-        #writes first name
-        pyautogui.moveTo(res.width / 2.2, res.height / 2.34)
-        pyautogui.click()
-        pyautogui.write("Pornelius")
+        var = random.randint(1,2)
 
-        sleep(.15)
-        #writes lastname
-        pyautogui.moveTo(res.width / 1.8, res.height / 2.34)
-        pyautogui.click()
-        pyautogui.write("Hubert")
-        
+        if var == 1:
+
+            #writes first name
+            pyautogui.moveTo(res.width / 2.2, res.height / 2.34)
+            pyautogui.click()
+            pyautogui.write("Pornelius")
+
+            sleep(.15)
+            #writes lastname
+            pyautogui.moveTo(res.width / 1.8, res.height / 2.34)
+            pyautogui.click()
+            pyautogui.write("Hubert")
+        elif var == 2:
+        #writes first name
+            pyautogui.moveTo(res.width / 2.2, res.height / 2.34)
+            pyautogui.click()
+            pyautogui.write("Ferret")
+
+            sleep(.15)
+            #writes lastname
+            pyautogui.moveTo(res.width / 1.8, res.height / 2.34)
+            pyautogui.click()
+            pyautogui.write("Damian")
+
         sleep(.15)
 
         #writes username
         pyautogui.moveTo(res.width / 2.2, res.height / 2.03)
         pyautogui.click()
         pyautogui.write(GENNERATED_NAME)
+        pyautogui.write(username)
 
         sleep(.15)
         #writes password
@@ -713,10 +729,6 @@ if __name__ == "__main__":
     password = sys.argv[2]
     username = sys.argv[3]
 
-    close_fort()
-
-    sleep(2)
-
-    sign_out2560()
     main(email, username, password)
+
     print("Terminating script ...")
